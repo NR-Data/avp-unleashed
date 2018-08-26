@@ -1,0 +1,3205 @@
+{
+  "gameSystem": {
+    "name": "AVP: Unleashed",
+    "id": "639c-10b0-0bec-b836",
+    "authorContact": "johnchristophersmith@hotmail.com",
+    "authorName": "John C. Smith \"Darth Fraggle\"",
+    "battleScribeVersion": 2.03,
+    "revision": 3,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Characters", "id": "52f1-18fa-f371-f40b", "hidden": false},
+      {"name": "Troops", "id": "645b-adc7-9bb9-5d5e", "hidden": false},
+      {"name": "Support", "id": "ee84-a5cb-eb15-d280", "hidden": false},
+      {"name": "Monster/ Light Vehicle", "id": "1ab6-a4be-521a-3c12", "hidden": false},
+      {"name": "Transport Vehicle", "id": "a2fc-1002-b884-917b", "hidden": false},
+      {"name": "Heavy Vehicle", "id": "a0eb-bdb5-0f40-3b6d", "hidden": false},
+      {"name": "Flier", "id": "79ad-4512-1052-014d", "hidden": false},
+      {"name": "Walker", "id": "d0b3-d9d4-6d68-0493", "hidden": false},
+      {"name": "Tank", "id": "5d51-7b06-c557-4c66", "hidden": false},
+      {"name": "Bike", "id": "c07b-43b8-6d58-ac93", "hidden": false},
+      {"name": "Jetbike", "id": "0546-16c2-807d-dcae", "hidden": false},
+      {"name": "Cavalry", "id": "8711-9095-2eb5-1dea", "hidden": false},
+      {"name": "Heavy Walker", "id": "e389-b9f1-21c2-115c", "hidden": false},
+      {"name": "Infantry", "id": "fd56-ce9f-601d-098d", "hidden": false},
+      {"name": "Army Commander", "id": "2349-4e2c-0d07-8031", "hidden": true},
+      {"name": "Jetbike", "id": "585f-81ae-687e-a77f", "hidden": false}
+    ],
+    "costTypes": [{"name": "Points", "id": "547a-ce3f-3831-bc09", "defaultCostLimit": 0}],
+    "forceEntries": [
+      {
+        "name": "Skirmish OOC",
+        "id": "59fa-f0ad-2a51-2bda",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "59fa-f0ad-2a51-2bda-52f1-18fa-f371-f40b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "52f1-18fa-f371-f40b",
+            "constraints": [
+              {
+                "id": "1605-9fce-7be6-f0c5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5cf2-5211-0b14-a27a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "id": "59fa-f0ad-2a51-2bda-645b-adc7-9bb9-5d5e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "645b-adc7-9bb9-5d5e",
+            "constraints": [
+              {
+                "id": "3d61-0d68-bfab-f45f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "min",
+                "value": 2
+              },
+              {
+                "id": "1c75-c294-5b84-ff75",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "59fa-f0ad-2a51-2bda-ee84-a5cb-eb15-d280",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ee84-a5cb-eb15-d280",
+            "constraints": [
+              {
+                "id": "8d72-9b7b-bc86-6ad4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ee84-a5cb-eb15-d280",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Army Commander",
+            "id": "6e7a-ed70-b9e4-2095",
+            "hidden": true,
+            "primary": false,
+            "targetId": "2349-4e2c-0d07-8031",
+            "constraints": [
+              {
+                "id": "a2cb-4351-61d2-8a81",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "45bc-8fbc-4e8d-992c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Standard OOC",
+        "id": "5533-198a-d261-c327",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "5533-198a-d261-c327-52f1-18fa-f371-f40b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "52f1-18fa-f371-f40b",
+            "constraints": [
+              {
+                "id": "0e64-8900-1fdf-36f4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "f5d1-2560-7c69-3ed6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "id": "5533-198a-d261-c327-645b-adc7-9bb9-5d5e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "645b-adc7-9bb9-5d5e",
+            "constraints": [
+              {
+                "id": "7a06-f18c-ae72-1e77",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "min",
+                "value": 2
+              },
+              {
+                "id": "b3f4-a783-8a23-a4e7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "5533-198a-d261-c327-ee84-a5cb-eb15-d280",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ee84-a5cb-eb15-d280",
+            "constraints": [
+              {
+                "id": "b382-3955-86f8-11ae",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ee84-a5cb-eb15-d280",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Monster/ Light Vehicle",
+            "id": "5533-198a-d261-c327-1ab6-a4be-521a-3c12",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1ab6-a4be-521a-3c12",
+            "constraints": [
+              {
+                "id": "30e4-a8b7-7efe-bc55",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "1ab6-a4be-521a-3c12",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Transport Vehicle",
+            "id": "5533-198a-d261-c327-a2fc-1002-b884-917b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a2fc-1002-b884-917b",
+            "constraints": [
+              {
+                "id": "5830-2f4b-e90b-b659",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a2fc-1002-b884-917b",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Army Commander",
+            "id": "c341-5c70-e40e-2b7e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2349-4e2c-0d07-8031",
+            "constraints": [
+              {
+                "id": "b431-fa80-1e53-bea0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "7eb2-2174-ef70-daf5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy OOC",
+        "id": "47d9-6500-3832-a349",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "47d9-6500-3832-a349-52f1-18fa-f371-f40b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "52f1-18fa-f371-f40b",
+            "constraints": [
+              {
+                "id": "abd1-0664-e279-7a13",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8e6d-fe93-4999-a40d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "max",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "id": "47d9-6500-3832-a349-645b-adc7-9bb9-5d5e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "645b-adc7-9bb9-5d5e",
+            "constraints": [
+              {
+                "id": "93b9-b5a1-e616-579d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "min",
+                "value": 2
+              },
+              {
+                "id": "9e42-23f9-75de-8277",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "47d9-6500-3832-a349-ee84-a5cb-eb15-d280",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ee84-a5cb-eb15-d280",
+            "constraints": [
+              {
+                "id": "f893-57fe-6083-f1d4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ee84-a5cb-eb15-d280",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Monster/ Light Vehicle",
+            "id": "47d9-6500-3832-a349-1ab6-a4be-521a-3c12",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1ab6-a4be-521a-3c12",
+            "constraints": [
+              {
+                "id": "d961-e9de-5ed4-a2d7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "1ab6-a4be-521a-3c12",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "d961-e9de-5ed4-a2d7",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "a0eb-bdb5-0f40-3b6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Transport Vehicle",
+            "id": "47d9-6500-3832-a349-a2fc-1002-b884-917b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a2fc-1002-b884-917b",
+            "constraints": [
+              {
+                "id": "96d4-cbea-f604-a93a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a2fc-1002-b884-917b",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Heavy Vehicle",
+            "id": "47d9-6500-3832-a349-a0eb-bdb5-0f40-3b6d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0eb-bdb5-0f40-3b6d",
+            "constraints": [
+              {
+                "id": "9b60-5a78-9072-a233",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a0eb-bdb5-0f40-3b6d",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "9b60-5a78-9072-a233",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "1ab6-a4be-521a-3c12",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Army Commander",
+            "id": "e8e8-7363-c483-c374",
+            "hidden": true,
+            "primary": false,
+            "targetId": "2349-4e2c-0d07-8031",
+            "constraints": [
+              {
+                "id": "5dc3-ebd2-3006-9200",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "b560-d5e2-d5e4-e63f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mega OOC",
+        "id": "96ad-73f8-da7f-601e",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "96ad-73f8-da7f-601e-52f1-18fa-f371-f40b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "52f1-18fa-f371-f40b",
+            "constraints": [
+              {
+                "id": "ed2d-a672-49ee-23c2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "8ab5-4439-1794-d901",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "max",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "id": "96ad-73f8-da7f-601e-645b-adc7-9bb9-5d5e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "645b-adc7-9bb9-5d5e",
+            "constraints": [
+              {
+                "id": "335b-d177-2f4f-a262",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "min",
+                "value": 4
+              },
+              {
+                "id": "079f-22a7-b296-931d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "96ad-73f8-da7f-601e-ee84-a5cb-eb15-d280",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ee84-a5cb-eb15-d280",
+            "constraints": [
+              {
+                "id": "d07e-5dc9-4074-ad1f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ee84-a5cb-eb15-d280",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Monster/ Light Vehicle",
+            "id": "96ad-73f8-da7f-601e-1ab6-a4be-521a-3c12",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1ab6-a4be-521a-3c12",
+            "constraints": [
+              {
+                "id": "00d4-6ee2-c1c3-f03e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "1ab6-a4be-521a-3c12",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Transport Vehicle",
+            "id": "96ad-73f8-da7f-601e-a2fc-1002-b884-917b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a2fc-1002-b884-917b",
+            "constraints": [
+              {
+                "id": "6778-3d1f-9ac8-c6cc",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a2fc-1002-b884-917b",
+                "shared": true,
+                "type": "max",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "name": "Army Commander",
+            "id": "8ebb-6ecd-07d7-241f",
+            "hidden": true,
+            "primary": false,
+            "targetId": "2349-4e2c-0d07-8031",
+            "constraints": [
+              {
+                "id": "5e82-1ed5-d62a-2b10",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "f57a-f77c-dd23-54a0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gargantuan OOC",
+        "id": "c3f9-629e-f5f0-cf43",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Characters",
+            "id": "c3f9-629e-f5f0-cf43-52f1-18fa-f371-f40b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "52f1-18fa-f371-f40b",
+            "constraints": [
+              {
+                "id": "fdf8-4447-5d9e-7d52",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "b54f-3df8-1906-5a11",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "52f1-18fa-f371-f40b",
+                "shared": true,
+                "type": "max",
+                "value": 7
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "id": "c3f9-629e-f5f0-cf43-645b-adc7-9bb9-5d5e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "645b-adc7-9bb9-5d5e",
+            "constraints": [
+              {
+                "id": "f44c-2462-2c22-79ad",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "min",
+                "value": 4
+              },
+              {
+                "id": "8c75-750d-91f1-f9fe",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "645b-adc7-9bb9-5d5e",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "id": "c3f9-629e-f5f0-cf43-ee84-a5cb-eb15-d280",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ee84-a5cb-eb15-d280",
+            "constraints": [
+              {
+                "id": "934a-e76a-eeee-07e5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ee84-a5cb-eb15-d280",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ]
+          },
+          {
+            "name": "Monster/ Light Vehicle",
+            "id": "c3f9-629e-f5f0-cf43-1ab6-a4be-521a-3c12",
+            "hidden": false,
+            "primary": false,
+            "targetId": "1ab6-a4be-521a-3c12",
+            "constraints": [
+              {
+                "id": "e3b7-0354-7920-f6fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "1ab6-a4be-521a-3c12",
+                "shared": true,
+                "type": "max",
+                "value": 8
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "e3b7-0354-7920-f6fd",
+                "type": "set",
+                "value": 4,
+                "conditions": [
+                  {
+                    "childId": "a0eb-bdb5-0f40-3b6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "field": "e3b7-0354-7920-f6fd",
+                "type": "set",
+                "value": 6,
+                "conditions": [
+                  {
+                    "childId": "a0eb-bdb5-0f40-3b6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "e3b7-0354-7920-f6fd",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "a0eb-bdb5-0f40-3b6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "field": "e3b7-0354-7920-f6fd",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "a0eb-bdb5-0f40-3b6d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 4
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Transport Vehicle",
+            "id": "c3f9-629e-f5f0-cf43-a2fc-1002-b884-917b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a2fc-1002-b884-917b",
+            "constraints": [
+              {
+                "id": "80d2-9990-9d54-535f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a2fc-1002-b884-917b",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "name": "Heavy Vehicle",
+            "id": "c3f9-629e-f5f0-cf43-a0eb-bdb5-0f40-3b6d",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a0eb-bdb5-0f40-3b6d",
+            "constraints": [
+              {
+                "id": "85d0-4e59-2ee0-5e0b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a0eb-bdb5-0f40-3b6d",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              },
+              {
+                "id": "2376-6519-0ade-0962",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "a0eb-bdb5-0f40-3b6d",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "85d0-4e59-2ee0-5e0b",
+                "type": "set",
+                "value": 2,
+                "conditions": [
+                  {
+                    "childId": "1ab6-a4be-521a-3c12",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "field": "85d0-4e59-2ee0-5e0b",
+                "type": "set",
+                "value": 3,
+                "conditions": [
+                  {
+                    "childId": "1ab6-a4be-521a-3c12",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "roster",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Army Commander",
+            "id": "3787-e559-e0a3-f8d9",
+            "hidden": true,
+            "primary": false,
+            "targetId": "2349-4e2c-0d07-8031",
+            "constraints": [
+              {
+                "id": "09d5-dd8d-afd9-3385",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "8d66-59db-ce2c-4874",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Infantry",
+        "id": "dc7a-aa36-153f-b01a",
+        "characteristicTypes": [
+          {"name": "SP", "id": "9db2-e73d-81c4-7e5e"},
+          {"name": "CC", "id": "8dd8-6dd1-452d-e93d"},
+          {"name": "RS", "id": "a1a2-a898-3ad0-0eed"},
+          {"name": "ST", "id": "5f3f-d57f-4147-a808"},
+          {"name": "CON", "id": "ff87-4cb9-ec9b-2197"},
+          {"name": "WP", "id": "db0e-37dd-158d-c429"},
+          {"name": "LD", "id": "2186-73a8-0c4c-e706"},
+          {"name": "W", "id": "0ee7-d56e-e406-04e8"},
+          {"name": "A", "id": "f927-63b8-5afd-6ce1"},
+          {"name": "SZ", "id": "1a02-1e97-71e4-e658"},
+          {"name": "COH", "id": "05da-39a2-c9de-de6f"},
+          {"name": "PTS", "id": "1b37-c4b7-2c11-f4be"}
+        ]
+      },
+      {
+        "name": "Vehicle",
+        "id": "69ff-8e30-647f-0835",
+        "characteristicTypes": [
+          {"name": "SP", "id": "3d64-19d9-c140-f3c2"},
+          {"name": "CC", "id": "c5ce-8266-81a1-3b22"},
+          {"name": "RS", "id": "2449-66df-7dc8-fb0f"},
+          {"name": "WP", "id": "ed65-33f8-601a-60f7"},
+          {"name": "LD", "id": "3fb5-dad5-a441-ec28"},
+          {"name": "HULL", "id": "e459-2a09-f6a4-5d56"},
+          {"name": "WPNS", "id": "0d7a-4494-01c9-424c"},
+          {"name": "LEGS", "id": "f4a6-4f0b-6075-23b0"},
+          {"name": "ENG", "id": "da22-92fc-ab52-ecb7"},
+          {"name": "A-REAR", "id": "1627-198e-001c-8872"},
+          {"name": "SZ", "id": "2021-cb5b-54b1-82b3"},
+          {"name": "COH", "id": "ae91-11e5-e284-db0f"},
+          {"name": "PTS", "id": "8be6-7199-1e47-dafe"}
+        ]
+      },
+      {
+        "name": "Weapon",
+        "id": "e757-f9ad-a515-2a17",
+        "characteristicTypes": [
+          {"name": "R", "id": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "id": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "id": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "id": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "id": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Shield",
+        "id": "7225-7dbb-bfa5-5cbb",
+        "characteristicTypes": [{"name": "+ARM", "id": "6758-24d0-9c9d-2ed4"}, {"name": "+DEF", "id": "b603-6489-772a-c092"}, {"name": "RULES", "id": "f03f-1c6a-5b9c-49f8"}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Infant",
+        "id": "7555-f4ec-550e-bf46",
+        "hidden": false,
+        "typeId": "dc7a-aa36-153f-b01a",
+        "typeName": "Infantry",
+        "characteristics": [
+          {"name": "SP", "$text": "5", "typeId": "9db2-e73d-81c4-7e5e"},
+          {"name": "CC", "$text": "11/1", "typeId": "8dd8-6dd1-452d-e93d"},
+          {"name": "RS", "$text": "10", "typeId": "a1a2-a898-3ad0-0eed"},
+          {"name": "ST", "$text": "9", "typeId": "5f3f-d57f-4147-a808"},
+          {"name": "CON", "$text": "9", "typeId": "ff87-4cb9-ec9b-2197"},
+          {"name": "WP", "$text": "12", "typeId": "db0e-37dd-158d-c429"},
+          {"name": "LD", "$text": "13", "typeId": "2186-73a8-0c4c-e706"},
+          {"name": "W", "$text": "1", "typeId": "0ee7-d56e-e406-04e8"},
+          {"name": "A", "$text": "18", "typeId": "f927-63b8-5afd-6ce1"},
+          {"name": "SZ", "$text": "0", "typeId": "1a02-1e97-71e4-e658"},
+          {"name": "COH", "$text": "12\"", "typeId": "05da-39a2-c9de-de6f"},
+          {"name": "PTS", "$text": "9", "typeId": "1b37-c4b7-2c11-f4be"}
+        ]
+      },
+      {
+        "name": "Facehugger",
+        "id": "b3fd-5e02-34ef-1952",
+        "hidden": false,
+        "typeId": "dc7a-aa36-153f-b01a",
+        "typeName": "Infantry",
+        "characteristics": [
+          {"name": "SP", "$text": "6", "typeId": "9db2-e73d-81c4-7e5e"},
+          {"name": "CC", "$text": "11/1", "typeId": "8dd8-6dd1-452d-e93d"},
+          {"name": "RS", "$text": "10", "typeId": "a1a2-a898-3ad0-0eed"},
+          {"name": "ST", "$text": "8", "typeId": "5f3f-d57f-4147-a808"},
+          {"name": "CON", "$text": "9", "typeId": "ff87-4cb9-ec9b-2197"},
+          {"name": "WP", "$text": "11", "typeId": "db0e-37dd-158d-c429"},
+          {"name": "LD", "$text": "11", "typeId": "2186-73a8-0c4c-e706"},
+          {"name": "W", "$text": "1", "typeId": "0ee7-d56e-e406-04e8"},
+          {"name": "A", "$text": "16", "typeId": "f927-63b8-5afd-6ce1"},
+          {"name": "SZ", "$text": "0", "typeId": "1a02-1e97-71e4-e658"},
+          {"name": "COH", "$text": "-", "typeId": "05da-39a2-c9de-de6f"},
+          {"name": "PTS", "$text": "-", "typeId": "1b37-c4b7-2c11-f4be"}
+        ]
+      },
+      {
+        "name": "Crawling Mandibles",
+        "id": "bf8c-9fc0-5e53-05b5",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "B2B", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "+0", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "1", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "CC", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "$text": "Exploit", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Small Claws",
+        "id": "b869-b0bb-66bf-2db3",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "B2B", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "+2", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "2", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "CC", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Plasma Caster",
+        "id": "6b69-4e6b-5822-2c4e",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "24", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "14", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "2", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "A", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "$text": "Armour-Piercing(3), Slow to Reload, RES(1): Critical Force(2)", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Sword",
+        "id": "6bfb-9915-cf46-97d3",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "1", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "+2", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "3", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "CC", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "$text": "May reroll misses", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Wrist Blades",
+        "id": "cc8c-2a1a-adbb-e81a",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "1", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "+2", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "2", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "CC", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "$text": "Deadly", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      },
+      {
+        "name": "Acid Spit(Acid Spray)",
+        "id": "b246-e741-b005-001f",
+        "hidden": false,
+        "typeId": "e757-f9ad-a515-2a17",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "SFT", "typeId": "bf81-58c8-2998-0bac"},
+          {"name": "ST", "$text": "13", "typeId": "6897-944f-c8fe-4c3c"},
+          {"name": "ROA", "$text": "1", "typeId": "230e-bcc1-5de9-c333"},
+          {"name": "TYPE", "$text": "F", "typeId": "d9f6-13bc-ea9c-edf7"},
+          {"name": "RULES", "$text": "Armour-Piercing (4)", "typeId": "9f21-2671-81ec-316a"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Deployment: Infiltrate", "id": "d5b7-414c-f486-421d", "hidden": false},
+      {"name": "Deployment: Stalk", "id": "d045-b1e5-af7a-a68d", "hidden": false},
+      {"name": "Deployment: Preemptive Strike", "id": "8a9e-df75-3649-91c0", "hidden": false},
+      {"name": "Deployment: Rapid Deployment", "id": "51aa-951b-a802-72bf", "hidden": false},
+      {"name": "Deployment: Flank", "id": "eaa5-5682-6c52-8505", "hidden": false},
+      {
+        "name": "Bodyguard",
+        "id": "55fc-36d2-10ca-d2dc",
+        "description": "Hits can be transferred to this model using the guarded rule even if they are in a different squad to the guarded model, inflicted by a close combat attack or made by a model with Sniper.",
+        "hidden": false
+      },
+      {
+        "name": "Brutal",
+        "id": "1e0c-c2c4-dcd4-766f",
+        "description": "When this model reduces an enemy model to 0 or less wounds with a CC attack, the victim’s squad must immediately take a pinning test.",
+        "hidden": false
+      },
+      {
+        "name": "Camouflage(1)",
+        "id": "6734-5882-b283-4da2",
+        "description": "Camouflage (X) - If an enemy model receives a cover modifier when making a ranged attack at this model, the cover modifier is increased by (X).",
+        "hidden": false
+      },
+      {
+        "name": "Camouflage(2)",
+        "id": "418a-4d95-51a3-72dd",
+        "description": "Camouflage (X) - If an enemy model receives a cover modifier when making a ranged attack at this model, the cover modifier is increased by (X).",
+        "hidden": false
+      },
+      {"name": "Boost(X/Y)", "id": "c906-4087-d7e0-c0df", "description": "Boost (X/Y): RES (X): The model gains SP(+Y).", "hidden": false},
+      {
+        "name": "Camouflage(3)",
+        "id": "6820-f692-cda2-ce29",
+        "description": "Camouflage (X) - If an enemy model receives a cover modifier when making a ranged attack at this model, the cover modifier is increased by (X).",
+        "hidden": false
+      },
+      {
+        "name": "Camouflage(4)",
+        "id": "043b-f2fd-c2f0-4c5a",
+        "description": "Camouflage (X) - If an enemy model receives a cover modifier when making a ranged attack at this model, the cover modifier is increased by (X).",
+        "hidden": false
+      },
+      {
+        "name": "Cannon Fodder",
+        "id": "37aa-df41-f6b9-c75c",
+        "description": "Friendly models can target the model with CC, RS, and Psychic (S) attacks and Psychic (D) powers, and can use template attacks where this model would be hit by the template before scattering. All friendly fire rules still apply.",
+        "hidden": false
+      },
+      {
+        "name": "Contempt(All)",
+        "id": "fcf5-5257-1cc1-89db",
+        "description": "Contempt (X) – This model may reroll pinning, break and fear tests if caused by a model of the type (X).",
+        "hidden": false
+      },
+      {
+        "name": "Crackshot(1)",
+        "id": "55c7-7988-dd05-8444",
+        "description": "Crackshot (X) - When the model performs a battle focus action, it gains an additional RS(+X) for that roll.",
+        "hidden": false
+      },
+      {
+        "name": "Crackshot(2)",
+        "id": "b165-7d53-6093-bb07",
+        "description": "Crackshot (X) - When the model performs a battle focus action, it gains an additional RS(+X) for that roll.",
+        "hidden": false
+      },
+      {
+        "name": "Crackshot(3)",
+        "id": "7cb4-b902-b94d-e214",
+        "description": "Crackshot (X) - When the model performs a battle focus action, it gains an additional RS(+X) for that roll.",
+        "hidden": false
+      },
+      {
+        "name": "Crackshot(4)",
+        "id": "5d25-116e-69ba-8970",
+        "description": "Crackshot (X) - When the model performs a battle focus action, it gains an additional RS(+X) for that roll.",
+        "hidden": false
+      },
+      {
+        "name": "Dissention(1)",
+        "id": "25d4-dc25-fa65-338e",
+        "description": "Dissention (X) - All enemy models within 12” of one or more models with this ability receive a LD(-X). The effects are not cumulative, use the highest dissention value if a Model is within range of more than one model with this ability.",
+        "hidden": false
+      },
+      {
+        "name": "Dissention(2)",
+        "id": "e697-95a3-e404-cc1c",
+        "description": "Dissention (X) - All enemy models within 12” of one or more models with this ability receive a LD(-X). The effects are not cumulative, use the highest dissention value if a Model is within range of more than one model with this ability.",
+        "hidden": false
+      },
+      {
+        "name": "Dissention(3)",
+        "id": "ed9b-b5fe-1699-6fda",
+        "description": "Dissention (X) - All enemy models within 12” of one or more models with this ability receive a LD(-X). The effects are not cumulative, use the highest dissention value if a Model is within range of more than one model with this ability.",
+        "hidden": false
+      },
+      {
+        "name": "Dissention(4)",
+        "id": "5460-97bd-bb61-443d",
+        "description": "Dissention (X) - All enemy models within 12” of one or more models with this ability receive a LD(-X). The effects are not cumulative, use the highest dissention value if a Model is within range of more than one model with this ability.",
+        "hidden": false
+      },
+      {
+        "name": "Disposable",
+        "id": "5b09-3564-b803-efd7",
+        "description": "A squad whose squad commander or acting squad commander has this ability always passes break tests.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(1)",
+        "id": "2e16-06e1-6b26-20dc",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(2)",
+        "id": "804b-69d8-e62f-a08b",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(3)",
+        "id": "8fa4-fba3-20d9-5837",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(4)",
+        "id": "067d-f3c3-e2a0-ba4a",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(5)",
+        "id": "a418-85b9-3f4f-7e34",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(6)",
+        "id": "87a9-53e0-e813-050f",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(7)",
+        "id": "58f4-16cb-5cf6-fce9",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {
+        "name": "Dodge(8)",
+        "id": "b827-6ef6-648f-95af",
+        "description": "Dodge (X) - A saving roll. Roll a d20 every time the model receives a hit but before any other saving roll would be made. If ‘X’ or less is rolled, the attack has no effect on the model. This ability cannot be used against hits transferred to the model due to the guarded rule. Power shots cannot be dodged.",
+        "hidden": false
+      },
+      {"name": "Duelist", "id": "5d6d-d70d-8496-6b8d", "description": "Once per turn, this model may re-roll a single failed CC test.", "hidden": false},
+      {"name": "Durable", "id": "06fd-6439-7689-fabf", "description": "The model ignores the effects of critical force.", "hidden": false},
+      {
+        "name": "Eagle Eye(1)",
+        "id": "cb32-4dae-73e9-3f4b",
+        "description": "Eagle Eye (X) - The Model can ignore negative modifiers to shooting to its RS up to an amount of (X)for all of its ROA if it performs the ‘battle focus’ action prior to shooting.",
+        "hidden": false
+      },
+      {
+        "name": "Eagle Eye(2)",
+        "id": "0aee-85ee-6dc1-0372",
+        "description": "Eagle Eye (X) - The Model can ignore negative modifiers to shooting to its RS up to an amount of (X)for all of its ROA if it performs the ‘battle focus’ action prior to shooting.",
+        "hidden": false
+      },
+      {
+        "name": "Eagle Eye(3)",
+        "id": "28a2-4c45-cfcc-38d9",
+        "description": "Eagle Eye (X) - The Model can ignore negative modifiers to shooting to its RS up to an amount of (X)for all of its ROA if it performs the ‘battle focus’ action prior to shooting.",
+        "hidden": false
+      },
+      {
+        "name": "Eagle Eye(4)",
+        "id": "483b-dd2b-d09b-a5c4",
+        "description": "Eagle Eye (X) - The Model can ignore negative modifiers to shooting to its RS up to an amount of (X)for all of its ROA if it performs the ‘battle focus’ action prior to shooting.",
+        "hidden": false
+      },
+      {
+        "name": "Enhanced Unblinking Eye",
+        "id": "ce93-f9c7-c9e4-c0c5",
+        "description": "This model may ignore RS modifiers for long range. Additionally, this model may reroll one unsuccessful RS test per turn, except if the roll is a fumble.",
+        "hidden": false
+      },
+      {
+        "name": "Espionage",
+        "id": "9964-22c6-ef0c-0c9f",
+        "description": "Once per turn, the model can use AP(1) to perform an espionage action and select a player. The selected player must immediately announce which squad they will activate next when it is their turn.",
+        "hidden": false
+      },
+      {
+        "name": "Execution",
+        "id": "1e08-2eb0-8009-dbd3",
+        "description": "The model can spend AP(1) to remove another friendly model within 6” from the game. If that model belongs to a squad that is currently broken or pinned, that squad immediately recovers.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(0)",
+        "id": "cb62-80da-5c6d-81ef",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(1)",
+        "id": "5c7c-1161-71c3-7fec",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(2)",
+        "id": "cc1a-c174-c1c3-bbc7",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(3)",
+        "id": "7fa2-06f6-c4b2-d96e",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(4)",
+        "id": "2011-c842-5a4f-0efc",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(5)",
+        "id": "abbd-99f5-b4b3-7fe8",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fear(6)",
+        "id": "32a1-565d-1482-2ceb",
+        "description": "Fear (X) - If a model wants to attack a model with the Fear (X) ability in close combat, it must make a LD(-X) test. If the test is failed, the model’s CC value is halved. The test is only made once per opposing model and a model can only fail an LD test to resist Fear once per turn.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(0)",
+        "id": "a9f1-edaa-7907-b07f",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(1)",
+        "id": "7a31-2091-c190-5d4e",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(5)",
+        "id": "2631-b21d-1be6-639a",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(2)",
+        "id": "582e-31b1-f64d-9849",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(3)",
+        "id": "16a8-51de-3e34-7a92",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(4)",
+        "id": "12ce-6bd4-401a-801f",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless(6)",
+        "id": "48c5-401f-8545-516e",
+        "description": "Fearless (X) - Models with this ability add LD(+X) when testing against models with the Fear ability. If the value of the Fearless ability is at least equal to the Fear ability, the model does not need to make the LD test.",
+        "hidden": false
+      },
+      {
+        "name": "Ferocity(1)",
+        "id": "44dc-bca0-18ec-fd2d",
+        "description": "Ferocity (X) – This model adds ST(+X) in a turn where it performs a charge action. In the case of a Cavalry model, only the rider gains the bonus.",
+        "hidden": false
+      },
+      {
+        "name": "Ferocity(2)",
+        "id": "b243-e2dc-7ce9-b7ff",
+        "description": "Ferocity (X) – This model adds ST(+X) in a turn where it performs a charge action. In the case of a Cavalry model, only the rider gains the bonus.",
+        "hidden": false
+      },
+      {
+        "name": "Ferocity(4)",
+        "id": "a60b-41ef-95d5-2a25",
+        "description": "Ferocity (X) – This model adds ST(+X) in a turn where it performs a charge action. In the case of a Cavalry model, only the rider gains the bonus.",
+        "hidden": false
+      },
+      {
+        "name": "Ferocity(3)",
+        "id": "cede-9206-0c28-b4e1",
+        "description": "Ferocity (X) – This model adds ST(+X) in a turn where it performs a charge action. In the case of a Cavalry model, only the rider gains the bonus.",
+        "hidden": false
+      },
+      {
+        "name": "Follow Up",
+        "id": "1c99-2d68-2388-51a7",
+        "description": "At the end of this model’s activation where it performed a close combat action and is no longer engaged, it can move up to 3” towards the nearest enemy model ignoring the movement allowance for this turn.",
+        "hidden": false
+      },
+      {
+        "name": "Frenzy",
+        "id": "0582-89eb-376f-7c27",
+        "description": "When performing a charge action, this model gains an ROA(+1) to each of its close combat weapons.",
+        "hidden": false
+      },
+      {"name": "Guardsmen", "id": "9f3f-aef7-c4c2-f9a6", "description": "The model may perform the ‘sentry’ action for AP(1).", "hidden": false},
+      {
+        "name": "Gunslinger",
+        "id": "ca2b-7c55-cf10-b2c2",
+        "description": "The model can select secondary targets within 5” of the primary target when performing shooting attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Hard to Hit(1)",
+        "id": "8cb2-8f2a-2e91-5c42",
+        "description": "Hard to Hit (X) – All models targeting this model with a shooting action receive an additional RS(-X).",
+        "hidden": false
+      },
+      {
+        "name": "Hard to Hit(2)",
+        "id": "f3c9-a124-d54c-6eec",
+        "description": "Hard to Hit (X) – All models targeting this model with a shooting action receive an additional RS(-X).",
+        "hidden": false
+      },
+      {
+        "name": "Hard to Hit(3)",
+        "id": "c436-6bd5-cee7-3905",
+        "description": "Hard to Hit (X) – All models targeting this model with a shooting action receive an additional RS(-X).",
+        "hidden": false
+      },
+      {
+        "name": "Hard to Hit(4)",
+        "id": "87d2-c446-db68-651e",
+        "description": "Hard to Hit (X) – All models targeting this model with a shooting action receive an additional RS(-X).",
+        "hidden": false
+      },
+      {
+        "name": "Heal(1)",
+        "id": "f907-baa0-41ea-9ca6",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(2)",
+        "id": "b265-ed18-d8c6-a7eb",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(3)",
+        "id": "ed02-6c40-c93e-df4c",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(4)",
+        "id": "fb6a-677e-5b0f-9f8b",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(5)",
+        "id": "dcfd-6b65-fecb-c5bb",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(8)",
+        "id": "d8b4-b5ec-7e71-1006",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(6)",
+        "id": "f662-acd9-4217-10c2",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Heal(7)",
+        "id": "8fcc-8c20-60f4-a21a",
+        "description": "Heal (X) – A saving roll. Roll a d20 every time the model is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Heal cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to non-vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Hidden Agenda",
+        "id": "1ae7-3924-fd11-d673",
+        "description": "This model cannot interact with objectives or control or contest table zones. This squad cannot be joined by other models unless the joining model is of the same squad type.",
+        "hidden": false
+      },
+      {"name": "Hurricane of Destruction", "id": "4573-f110-b75c-d96c", "description": "This model´s CCWR is viable in its front and rear facing.", "hidden": false},
+      {
+        "name": "Initiative(1)",
+        "id": "7de7-41cb-24b1-87cc",
+        "description": "Initiative (X) – This squad adds a modifier of (X) to the initiative roll at the start of each turn. This modifier also applies to the initial initiative roll made before the game. If multiple squads in your army have this skill, count only the highest modifier.",
+        "hidden": false
+      },
+      {
+        "name": "Initiative(2)",
+        "id": "44f4-981b-8b86-6486",
+        "description": "Initiative (X) – This squad adds a modifier of (X) to the initiative roll at the start of each turn. This modifier also applies to the initial initiative roll made before the game. If multiple squads in your army have this skill, count only the highest modifier.",
+        "hidden": false
+      },
+      {
+        "name": "Initiative(3)",
+        "id": "efb1-af51-9140-a62b",
+        "description": "Initiative (X) – This squad adds a modifier of (X) to the initiative roll at the start of each turn. This modifier also applies to the initial initiative roll made before the game. If multiple squads in your army have this skill, count only the highest modifier.",
+        "hidden": false
+      },
+      {
+        "name": "Initiative(4)",
+        "id": "9362-70d7-1def-3d16",
+        "description": "Initiative (X) – This squad adds a modifier of (X) to the initiative roll at the start of each turn. This modifier also applies to the initial initiative roll made before the game. If multiple squads in your army have this skill, count only the highest modifier.",
+        "hidden": false
+      },
+      {
+        "name": "Leader(X/Y)",
+        "id": "829e-c126-a1cd-3766",
+        "description": "Leader (X/Y) – If this model is your commander, you may take (X) of squad (Y) as Troop types. All other limitations remain.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(1)",
+        "id": "23e2-e829-376b-7ebf",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(2)",
+        "id": "e773-32d0-702d-b90c",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(3)",
+        "id": "f16b-7b60-7b61-0ca6",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(4)",
+        "id": "4e6b-2b56-cfe0-1b4a",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(1)",
+        "id": "38ee-c728-1610-d796",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(2)",
+        "id": "a427-ebb4-df00-70f2",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(3)",
+        "id": "854a-e720-0e5d-7471",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(4)",
+        "id": "3691-3ba8-4ee2-1be6",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(5)",
+        "id": "cfbc-16e7-7c82-cc4c",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Medic(6)",
+        "id": "0a26-d033-76dc-e14d",
+        "description": "Medic (X) – Any friendly model within 5” inches of thismodel count as having the Heal (X) ability.",
+        "hidden": false
+      },
+      {
+        "name": "Paired Weapons(X)",
+        "id": "5747-5b46-5f92-0e88",
+        "description": "Paired Weapons (X) - The model can use up to two of its equipped weapons of the (X) type in the same action. In ranged combat, both weapons have the same primary target. (X) can be a specific weapon, e.g. (combat knife), or a weapon type, e.g. (HG) or (CC).",
+        "hidden": false
+      },
+      {"name": "Predator Senses", "id": "d7a7-05b4-1d8d-2552", "description": "The model does not need LOS to make a charge action.", "hidden": false},
+      {
+        "name": "Psychic Expertise(B)",
+        "id": "421d-fbfe-b5c0-d04b",
+        "description": "The model can cast multiple psychic powers of type (B) in the same turn. Each power can be only cast once.",
+        "hidden": false
+      },
+      {
+        "name": "Psychic Expertise(D)",
+        "id": "f06d-da61-e665-8acc",
+        "description": "The model can cast multiple psychic powers of type (D) in the same turn. Each power can be only cast once.",
+        "hidden": false
+      },
+      {"name": "Ranger", "id": "da44-cc95-98e8-89a8", "description": "This model can ignore movement penalties from difficult terrain.", "hidden": false},
+      {
+        "name": "Psychic Expertise(B/D)",
+        "id": "7ba0-821d-7afb-92b7",
+        "description": "The model can cast multiple psychic powers of types (B and D) in the same turn. Each power can be only cast once.",
+        "hidden": false
+      },
+      {"name": "Psychic Mastery(B)", "id": "6af0-0190-0f1c-9226", "description": "The model can cast one psychic power of type (B) for AP(0).", "hidden": false},
+      {"name": "Psychic Mastery(D)", "id": "b6f9-5fb9-1a33-9cd1", "description": "The model can cast one psychic power of type (D) for AP(0).", "hidden": false},
+      {
+        "name": "Psychic Mastery(B/D)",
+        "id": "4036-b701-b539-9765",
+        "description": "The model can cast one psychic power of each type (B and D) for AP(0).",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(1)",
+        "id": "e5c8-cb23-d135-d7b7",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(2)",
+        "id": "0f15-5c5f-67c2-4a10",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(3)",
+        "id": "6165-cf22-44a9-445f",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(4)",
+        "id": "17ff-f0fa-9488-a66d",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(5)",
+        "id": "ce58-f484-9adf-edc6",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(6)",
+        "id": "aa61-5b96-eddf-cf23",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(7)",
+        "id": "d1c4-43f3-c9ae-db24",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(8)",
+        "id": "4bc5-2ef1-ce5e-ea19",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(10)",
+        "id": "c2e5-e2d4-4548-101a",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration(9)",
+        "id": "a99e-dc46-ba74-d07c",
+        "description": "Regeneration (X) – At the start of this model´s activation, roll a D20. On a result of (X) or lower, the model gains W(+1) up to the starting number of W. In case of vehicles, you may choose the location in which the wound is restored.",
+        "hidden": false
+      },
+      {"name": "Relentless", "id": "bccb-12de-cf4d-238d", "description": "The model can ignore stun effects.", "hidden": false},
+      {
+        "name": "Repair(1)",
+        "id": "a8d1-ac0d-134a-ac53",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(2)",
+        "id": "247d-e74b-efd5-9332",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(3)",
+        "id": "5a88-d491-3cc2-cf2d",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(4)",
+        "id": "303a-b5da-7439-fefb",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(5)",
+        "id": "59ee-ad15-2e83-26d3",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(6)",
+        "id": "3c95-2500-29db-e4ea",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(7)",
+        "id": "1ad1-4b97-a665-b603",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Repair(8)",
+        "id": "c485-bbf9-ed33-4afc",
+        "description": "Repair (X) – A saving roll. Roll a D20 every time the mode is about to lose a Wound (after other saving rolls have failed, if they were allowed). If (X) or less is rolled on the d20, the model does not lose the wound. Multiple rolls will be required if the attack had Critical Force(X). Repair cannot be used if the wound is a result of a Power Shot. (X) can never be higher than (8), regardless of any modifiers. This only applies to vehicle models.",
+        "hidden": false
+      },
+      {
+        "name": "Sniper",
+        "id": "fd54-d28e-f8b4-60aa",
+        "description": "When performing a battle focus action, the target of the whole shooting action may not be ‘Guarded’.",
+        "hidden": false
+      },
+      {
+        "name": "Stay Frosty",
+        "id": "a1b9-049f-0fd7-0228",
+        "description": "The LD value of this model cannot be modified negatively except when making a Rapid Deployment test.",
+        "hidden": false
+      },
+      {"name": "Target Sense", "id": "8f2b-5307-c90d-2c1b", "description": "The model ignores the target priority rule.", "hidden": false},
+      {"name": "Unblinking Eye", "id": "3f0c-6f11-cce4-cd2b", "description": "This model may ignore RS modifiers for long range.", "hidden": false},
+      {
+        "name": "Unbreakable",
+        "id": "64fc-3b92-6908-ef1e",
+        "description": "This model always passes pinning and break tests. If broken or pinned, this model recovers automatically at the start of the squad activation.",
+        "hidden": false
+      },
+      {
+        "name": "Target Identifier(1)",
+        "id": "eb4d-d76c-16da-ff53",
+        "description": "Target Identifier(X) - The model receives LD(+X) when performing the target Priority test or when trying to “spot” a stalking squad.",
+        "hidden": false
+      },
+      {
+        "name": "Target Identifier(2)",
+        "id": "47f3-ba3c-e542-8110",
+        "description": "Target Identifier(X) - The model receives LD(+X) when performing the target Priority test or when trying to “spot” a stalking squad.",
+        "hidden": false
+      },
+      {
+        "name": "Target Identifier(3)",
+        "id": "20de-56cb-5088-a91c",
+        "description": "Target Identifier(X) - The model receives LD(+X) when performing the target Priority test or when trying to “spot” a stalking squad.",
+        "hidden": false
+      },
+      {
+        "name": "Target Identifier(4)",
+        "id": "c12f-2b96-a676-ff19",
+        "description": "Target Identifier(X) - The model receives LD(+X) when performing the target Priority test or when trying to “spot” a stalking squad.",
+        "hidden": false
+      },
+      {
+        "name": "Gas Mask",
+        "id": "940c-5c32-b65f-4388",
+        "description": "This model can re-roll unsuccessful CON tests against weapons with the gas ability.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(1)",
+        "id": "ee56-840e-b93a-41a5",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(2)",
+        "id": "58c9-dd3d-9fb9-5341",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(3)",
+        "id": "44df-9fd3-e450-f8ef",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(4)",
+        "id": "a465-f856-db4a-03ad",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(5)",
+        "id": "4646-1fc0-260c-3be5",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Traps(X/Y/Z)",
+        "id": "6eee-f627-2e86-1d41",
+        "description": "Traps (X/Y/Z) - After deployment, but before infiltrators have been placed, you may place your traps on the board. A trap is always represented by (X) 30mm markers. Place them anywhere, but not within 12” of an enemy model. If an enemy model moves or activates within a certain distance to the trap (Y), it goes off! Immediately suspend play and roll: \nOn a roll of 1-15, remove the trap from the board and the tripping model receives the described hit (Z). \nOn a 16-20, nothing happens. Leave the trap in play. \nAfter resolving the trap, the surviving model may continue its activation.\nIf a trap goes off and there are multiple targets, the trap´s owner chooses the order in which models are affected.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(5)",
+        "id": "4106-15e9-10b3-55c9",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Grappling Hooks(10)",
+        "id": "0f37-fd0e-6291-e1a2",
+        "description": "When climbing and jumping from height , a total of (X) inches of vertical distance per activation do not count against this model´s movement allowance. Also, it does not need to make CON tests while climbing.",
+        "hidden": false
+      },
+      {
+        "name": "Tough",
+        "id": "60a5-e766-f929-e7ba",
+        "description": "If this model is destroyed through Hull location damage, transported models do not suffer the autohits.",
+        "hidden": false
+      },
+      {
+        "name": "Crackshot(8)",
+        "id": "cac1-f6d1-8252-1b3a",
+        "description": "Crackshot (X) - When the model performs a battle focus action, it gains an additional RS(+X) for that roll.",
+        "hidden": false
+      },
+      {
+        "name": "Paired Weapons(CC/HG)",
+        "id": "3cee-077d-9c75-2399",
+        "description": "Paired Weapons (X) - The model can use up to two of its equipped weapons of the (X) type in the same action. In ranged combat, both weapons have the same primary target. (X) can be a specific weapon, e.g. (combat knife), or a weapon type, e.g. (HG) or (CC).",
+        "hidden": false
+      },
+      {
+        "name": "Swarm",
+        "id": "b2ff-b243-3cfa-1974",
+        "description": "Gain ST(+1) for every other friendly model with this ability in Close Combat with the same enemy model to a maximum of (+2).",
+        "hidden": false
+      },
+      {
+        "name": "Paired Weapons(CC)",
+        "id": "259c-59ca-42b5-96f4",
+        "description": "Paired Weapons (X) - The model can use up to two of its equipped weapons of the (X) type in the same action. In ranged combat, both weapons have the same primary target. (X) can be a specific weapon, e.g. (combat knife), or a weapon type, e.g. (HG) or (CC).",
+        "hidden": false
+      },
+      {"name": "Yautja Genetics", "id": "f031-3d6a-7a17-ed78", "description": "When this model activates, it gains AP(+1).", "hidden": false},
+      {"name": "Blinding Speed", "id": "7546-452f-b984-63f7", "description": "When making a Charge action, this model gains SP(+1).", "hidden": false},
+      {
+        "name": "Implant",
+        "id": "40d9-7779-f45c-83de",
+        "description": "If this model kills an enemy Infantry model in Close Combat, roll a die. On a 1-10, the enemy model is turned into an Infant and the Facehugger model is removed from play. If the model is removed like this, it does not count against its BCV.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(6)",
+        "id": "efbd-9b43-b7b6-a3a6",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(7)",
+        "id": "d0c9-219f-ca00-c7e1",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Leap(8)",
+        "id": "431b-5542-1202-e0e5",
+        "description": "Leap (X) – This model can be placed without any negative movement modifiers within (X) inches. This counts as a Walk action but cannot be used to pass impassable terrain higher than (X/2)” with a minimum of 2”.",
+        "hidden": false
+      },
+      {
+        "name": "Target Identifier(5)",
+        "id": "9217-3f88-55a8-d9cc",
+        "description": "Target Identifier(X) - The model receives LD(+X) when performing the target Priority test or when trying to “spot” a stalking squad.",
+        "hidden": false
+      },
+      {
+        "name": "Bio-Mask",
+        "id": "4558-8239-876f-0e7a",
+        "description": "This model gains Predator Senses, Target Identifier (3), Target Sense, and Gas Mask.",
+        "hidden": false
+      },
+      {
+        "name": "Cloaking Field",
+        "id": "42f2-5831-77ac-d161",
+        "description": "This model gains Hard to Hit (3). This model also gains the Stalk deployment option.",
+        "hidden": false
+      },
+      {
+        "name": "Med-Kit",
+        "id": "0d66-18c0-e884-1a2a",
+        "description": "This model immune to Implant. RES(1): Spend AP(2). Make a Regeneration (12) test.",
+        "hidden": false
+      },
+      {
+        "name": "Laser Traps(1/1/14, Deadly)",
+        "id": "6573-d197-2eed-7924",
+        "description": "Traps (X/Y/Z) - After deployment, but before infiltrators have been placed, you may place your traps on the board. A trap is always represented by (X) 30mm markers. Place them anywhere, but not within 12” of an enemy model. If an enemy model moves or activates within a certain distance to the trap (Y), it goes off! Immediately suspend play and roll: \nOn a roll of 1-15, remove the trap from the board and the tripping model receives the described hit (Z). \nOn a 16-20, nothing happens. Leave the trap in play. \nAfter resolving the trap, the surviving model may continue its activation.\nIf a trap goes off and there are multiple targets, the trap´s owner chooses the order in which models are affected.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Army Commander",
+        "id": "d8e2-117c-71bb-0969",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "c6d5-e348-8dff-978f", "hidden": false, "primary": true, "targetId": "2349-4e2c-0d07-8031"}],
+        "constraints": [
+          {
+            "id": "2eae-a4db-6490-1d09",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}]
+      },
+      {
+        "name": "Machiko Noguchi",
+        "id": "fef1-a64b-6a12-08cd",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "0e18-b859-1f66-e383",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 65}],
+        "entryLinks": [
+          {"name": "Army Commander", "id": "ce86-a0e1-8c31-162c", "hidden": false, "targetId": "d8e2-117c-71bb-0969", "type": "selectionEntry"},
+          {"name": "Laser Trap", "id": "1b90-2fa0-682b-931f", "hidden": false, "targetId": "3823-a241-6c90-9bd2", "type": "selectionEntry"}
+        ],
+        "infoLinks": [
+          {"name": "Plasma Caster", "id": "740f-bf15-7e35-75da", "hidden": false, "targetId": "6b69-4e6b-5822-2c4e", "type": "profile"},
+          {"name": "Deployment: Infiltrate", "id": "19e7-10b3-c3ee-a551", "hidden": false, "targetId": "d5b7-414c-f486-421d", "type": "rule"},
+          {"name": "Sword", "id": "fd93-dfba-bf47-baef", "hidden": false, "targetId": "6bfb-9915-cf46-97d3", "type": "profile"},
+          {"name": "Wrist Blades", "id": "8c0e-66b0-b561-c40d", "hidden": false, "targetId": "cc8c-2a1a-adbb-e81a", "type": "profile"},
+          {"name": "Bio-Mask", "id": "1501-df87-700e-8800", "hidden": false, "targetId": "4558-8239-876f-0e7a", "type": "rule"},
+          {"name": "Cloaking Field", "id": "57b4-e103-1444-7668", "hidden": false, "targetId": "42f2-5831-77ac-d161", "type": "rule"},
+          {"name": "Med-Kit", "id": "e910-7aa0-d02d-a48e", "hidden": false, "targetId": "0d66-18c0-e884-1a2a", "type": "rule"},
+          {"name": "Dodge(4)", "id": "52bb-4c1b-fa03-1b77", "hidden": false, "targetId": "067d-f3c3-e2a0-ba4a", "type": "rule"},
+          {"name": "Duelist", "id": "2c96-3b15-bb81-4c01", "hidden": false, "targetId": "5d6d-d70d-8496-6b8d", "type": "rule"},
+          {"name": "Fearless(3)", "id": "1f63-1c1d-bba8-eddd", "hidden": false, "targetId": "16a8-51de-3e34-7a92", "type": "rule"},
+          {"name": "Follow Up", "id": "58f0-6ce5-83cc-ec9b", "hidden": false, "targetId": "1c99-2d68-2388-51a7", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Machiko Noguchi",
+            "id": "d8e1-da18-9a7a-a9a5",
+            "hidden": false,
+            "typeId": "dc7a-aa36-153f-b01a",
+            "typeName": "Infantry",
+            "characteristics": [
+              {"name": "SP", "$text": "6", "typeId": "9db2-e73d-81c4-7e5e"},
+              {"name": "CC", "$text": "15/4", "typeId": "8dd8-6dd1-452d-e93d"},
+              {"name": "RS", "$text": "15", "typeId": "a1a2-a898-3ad0-0eed"},
+              {"name": "ST", "$text": "9", "typeId": "5f3f-d57f-4147-a808"},
+              {"name": "CON", "$text": "10", "typeId": "ff87-4cb9-ec9b-2197"},
+              {"name": "WP", "$text": "17", "typeId": "db0e-37dd-158d-c429"},
+              {"name": "LD", "$text": "16", "typeId": "2186-73a8-0c4c-e706"},
+              {"name": "W", "$text": "3", "typeId": "0ee7-d56e-e406-04e8"},
+              {"name": "A", "$text": "24(9)", "typeId": "f927-63b8-5afd-6ce1"},
+              {"name": "SZ", "$text": "0", "typeId": "1a02-1e97-71e4-e658"},
+              {"name": "COH", "$text": "-", "typeId": "05da-39a2-c9de-de6f"},
+              {"name": "PTS", "$text": "65", "typeId": "1b37-c4b7-2c11-f4be"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Apprentice", "id": "bbea-42e7-d43e-ec51", "description": "This model does not gain the AP(+1) from Perfect Warriors.", "hidden": false}]
+      },
+      {
+        "name": "Burrowers",
+        "id": "5f81-9fdf-45fc-e73a",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e402-259b-24ac-1e2c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "d326-73a8-22e8-9ff9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Deployment: Rapid Deployment", "id": "5578-ebf1-0526-8988", "hidden": false, "targetId": "51aa-951b-a802-72bf", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "547a-ce3f-3831-bc09",
+            "type": "increment",
+            "value": 3,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "parent",
+                "shared": true,
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Burrowers", "id": "0496-491e-5f2d-e241", "description": "The model gains the Rapid Deployment Option. One squad per army.", "hidden": false}]
+      },
+      {
+        "name": "Acid Coated",
+        "id": "fc98-e91b-fa4f-505c",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e4c9-d591-c219-5368",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Acid Coated", "id": "d13b-4bfd-ab97-496e", "description": "This model’s Close Combat Weapons gain Armour-Piercing (+3).", "hidden": false}]
+      },
+      {
+        "name": "Adrenaline Boost",
+        "id": "caa4-ec42-651a-1608",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "12f3-7ea5-a474-2c15",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Adrenaline Boost", "id": "9eaf-e205-66fa-b625", "description": "The model gains SP(+1). Max SP of (6).", "hidden": false}]
+      },
+      {
+        "name": "Armoured Plating",
+        "id": "86ee-03d6-57e1-4d51",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ae93-9c23-650e-1745",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Armoured Plating", "id": "9861-3f4a-2fa9-7bc5", "description": "The model gains A(+2).", "hidden": false}]
+      },
+      {
+        "name": "Chameleon Carapace",
+        "id": "4f52-e4f8-3b39-3a96",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f165-c5c9-1779-51ee",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Chameleon Carapace", "id": "7c5e-cbe0-eb0b-a9ad", "description": "The model gains Camouflage (+2).", "hidden": false}]
+      },
+      {
+        "name": "Keen Perception",
+        "id": "c431-5e38-980c-0743",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e88a-01c6-b88c-2718",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Keen Perception", "id": "9d26-0808-e8f4-a9e9", "description": "The model gains Target Identifier (+3).", "hidden": false}]
+      },
+      {
+        "name": "Powerful Hind Legs",
+        "id": "f634-3588-7217-8550",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "a38d-3f0e-9151-c97c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Powerful Hind Legs",
+            "id": "2268-4af8-b082-3625",
+            "description": "The model gains Leap (6). If the model already has Leap, it gains Leap (+2).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Rippers",
+        "id": "bb8c-7115-4ed5-25b7",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e01e-90ae-bcde-2037",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Rippers", "id": "735b-7d6a-8b2d-dd8b", "description": "This model’s Close Combat Weapons gain Precision (+1).", "hidden": false}]
+      },
+      {
+        "name": "Royal Jelly",
+        "id": "1179-8cc1-bf7f-598e",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6511-cc4e-4d95-6576",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Royal Jelly",
+            "id": "c97a-7fe6-652a-2d5a",
+            "description": "The model gains Regenerate (5). If the model already has Regenerate, it gains Regenerate (+2).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Toughened Exoskeleton",
+        "id": "96a3-4ba4-96f9-977c",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e15f-1ac1-3a15-a1d1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Toughened Exoskeleton",
+            "id": "d978-374c-c15b-1d6a",
+            "description": "The model gains Heal (3). If the model already has Heal, it gains Heal (+1).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Unnerving Presence",
+        "id": "ebe7-ddf0-abeb-5432",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3262-dc8d-c07b-b3f3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Dissention(2)", "id": "18c6-47d2-14bc-b7cc", "hidden": false, "targetId": "e697-95a3-e404-cc1c", "type": "rule"}],
+        "rules": [{"name": "Unnerving Presence", "id": "bb25-50fb-86cc-4719", "description": "The model gains Dissention (+2).", "hidden": false}]
+      },
+      {
+        "name": "Hive Collective",
+        "id": "7ff0-73c6-46eb-40e5",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6ffd-ff33-f9f5-8500",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Hive Collective",
+            "id": "2854-e907-2f6e-9788",
+            "description": "The model gains Initiative (2). If the model already has Initiative, it gains Initiative (+2).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bloodthirsty",
+        "id": "b6dd-7593-599e-ce89",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f28b-d767-290f-c94e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Follow Up", "id": "8979-23bd-8e00-8306", "hidden": false, "targetId": "1c99-2d68-2388-51a7", "type": "rule"}],
+        "rules": [{"name": "Bloodthirsty", "id": "1c56-8a66-ab2e-53d4", "description": "The model gains Follow Up.", "hidden": false}]
+      },
+      {
+        "name": "Obscuring Mist",
+        "id": "f43c-8850-cfb0-2f96",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "cced-67ee-8a85-c80b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [{"name": "Obscuring Mist", "id": "863f-1274-6701-d82f", "description": "Reduce enemy Ranged Weapons targeting this model by R(-6)", "hidden": false}]
+      },
+      {
+        "name": "Perfect Camouflage",
+        "id": "3580-c676-a12a-32d8",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "74a1-84cc-a932-64de",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Perfect Camouflage",
+            "id": "5334-550b-3d7f-b2b9",
+            "description": "Enemy models must reroll successful Spot checks when trying to reveal this model while in Stalk.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Pressurized Pulmonary Tract",
+        "id": "a845-6f2a-a89c-5dd8",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e8ef-7365-61c8-44fb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "rules": [
+          {
+            "name": "Pressurized Pulmonary Tract",
+            "id": "437d-524e-1619-3984",
+            "description": "Acid Blood autohits a number of additional engaged enemy models chosen by this model’s controller equal to this model’s SZ(+1). Each model may only take one autohit.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Scouts",
+        "id": "47e5-9179-afef-5b95",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ff4a-8e03-e0e4-fcac",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Espionage", "id": "8da3-39c8-0d60-ecc8", "hidden": false, "targetId": "9964-22c6-ef0c-0c9f", "type": "rule"}],
+        "rules": [{"name": "Scouts", "id": "36e2-b327-da39-a4ad", "description": "The model gains Espionage.", "hidden": false}]
+      },
+      {
+        "name": "Scuttlers",
+        "id": "c1e9-7851-5075-9949",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0ea6-4ec1-36ce-def0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Ranger", "id": "fd02-6a3b-8f03-fa18", "hidden": false, "targetId": "da44-cc95-98e8-89a8", "type": "rule"}],
+        "rules": [{"name": "Scuttlers", "id": "b61b-dc22-da04-6b4a", "description": "The model gains Ranger.", "hidden": false}]
+      },
+      {
+        "name": "Spatial Awareness",
+        "id": "d29b-7d9d-ba9d-ef50",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f59d-1c48-85a6-7fbb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [
+          {"name": "Hurricane of Destruction", "id": "6e17-29cb-cb0f-f982", "hidden": false, "targetId": "4573-f110-b75c-d96c", "type": "rule"},
+          {"name": "Predator Senses", "id": "1f9b-f827-872e-5e2b", "hidden": false, "targetId": "d7a7-05b4-1d8d-2552", "type": "rule"}
+        ],
+        "rules": [{"name": "Spatial Awareness", "id": "7355-2c92-33be-14cd", "description": "The model gains Hurricane of Destruction and Predator Senses.", "hidden": false}]
+      },
+      {
+        "name": "Acid Spray",
+        "id": "584f-7ba5-97a0-bd73",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f1a6-6d5a-e546-ad26",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 0}],
+        "infoLinks": [{"name": "Acid Spit(Acid Spray)", "id": "d75c-41bc-5922-647d", "hidden": false, "targetId": "b246-e741-b005-001f", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Acid Spray",
+            "id": "e9c4-4cfe-1b0a-4ad5",
+            "description": "Concentrated Acid Spit Weapons gain RES(1): Weapon Mode (Concentrated Acid Spray).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Acid Spray",
+        "id": "3a31-eb5d-3fad-f8ba",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "9022-dcf9-6b64-2d52",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 20}],
+        "profiles": [
+          {
+            "name": "Concentrated Acid Spit(Acid Spray)",
+            "id": "1dab-2a5b-3278-67b3",
+            "hidden": false,
+            "typeId": "e757-f9ad-a515-2a17",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "R", "$text": "FT", "typeId": "bf81-58c8-2998-0bac"},
+              {"name": "ST", "$text": "14", "typeId": "6897-944f-c8fe-4c3c"},
+              {"name": "ROA", "$text": "1", "typeId": "230e-bcc1-5de9-c333"},
+              {"name": "TYPE", "$text": "F", "typeId": "d9f6-13bc-ea9c-edf7"},
+              {"name": "RULES", "$text": "Armour-Piercing (6), Critical Force (2), Pinning", "typeId": "9f21-2671-81ec-316a"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Acid Spray",
+            "id": "6b19-486e-5694-acd7",
+            "description": "Concentrated Acid Spit Weapons gain RES(1): Weapon Mode (Concentrated Acid Spray).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Laser Trap",
+        "id": "3823-a241-6c90-9bd2",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "4b79-54ed-d9a7-25f7",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Points", "typeId": "547a-ce3f-3831-bc09", "value": 5}],
+        "infoLinks": [{"name": "Laser Traps(1/1/14, Deadly)", "id": "a5ea-1946-ff98-7faf", "hidden": false, "targetId": "6573-d197-2eed-7924", "type": "rule"}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Mutations",
+        "id": "44b1-c6cf-a19e-4c2c",
+        "collective": false,
+        "hidden": false,
+        "entryLinks": [
+          {"name": "Burrowers", "id": "0858-cfd2-77ac-c46f", "hidden": false, "targetId": "5f81-9fdf-45fc-e73a", "type": "selectionEntry"},
+          {
+            "name": "Acid Coated",
+            "id": "8c61-368f-d272-6a64",
+            "hidden": false,
+            "targetId": "fc98-e91b-fa4f-505c",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Adrenaline Boost",
+            "id": "e7d7-dabf-6c9b-e386",
+            "hidden": false,
+            "targetId": "caa4-ec42-651a-1608",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Armoured Plating",
+            "id": "589f-942a-dbd4-c7fa",
+            "hidden": false,
+            "targetId": "86ee-03d6-57e1-4d51",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Chameleon Carapace",
+            "id": "43ad-219c-e78e-bd58",
+            "hidden": false,
+            "targetId": "4f52-e4f8-3b39-3a96",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Keen Perception",
+            "id": "368d-e8b7-a0dc-4893",
+            "hidden": false,
+            "targetId": "c431-5e38-980c-0743",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Powerful Hind Legs",
+            "id": "6ceb-48e1-d20f-48f1",
+            "hidden": false,
+            "targetId": "f634-3588-7217-8550",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rippers",
+            "id": "3466-7819-c135-6d0a",
+            "hidden": false,
+            "targetId": "bb8c-7115-4ed5-25b7",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Royal Jelly",
+            "id": "3891-c350-c5f1-7382",
+            "hidden": false,
+            "targetId": "1179-8cc1-bf7f-598e",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Toughened Exoskeleton",
+            "id": "45e9-98ea-4180-5526",
+            "hidden": false,
+            "targetId": "96a3-4ba4-96f9-977c",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unnerving Presence",
+            "id": "41c3-1c24-07d6-1638",
+            "hidden": false,
+            "targetId": "ebe7-ddf0-abeb-5432",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bloodthirsty",
+            "id": "c885-7e9c-751a-2ff3",
+            "hidden": false,
+            "targetId": "b6dd-7593-599e-ce89",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Obscuring Mist",
+            "id": "4be5-abb5-7add-5def",
+            "hidden": false,
+            "targetId": "f43c-8850-cfb0-2f96",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Perfect Camouflage",
+            "id": "3174-8525-b044-9258",
+            "hidden": false,
+            "targetId": "3580-c676-a12a-32d8",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pressurized Pulmonary Tract",
+            "id": "8e04-5e90-bb2c-0dc4",
+            "hidden": false,
+            "targetId": "a845-6f2a-a89c-5dd8",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Scouts",
+            "id": "63ef-cc4f-8c11-a0bb",
+            "hidden": false,
+            "targetId": "47e5-9179-afef-5b95",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Scuttlers",
+            "id": "8287-6806-45dc-6c3a",
+            "hidden": false,
+            "targetId": "c1e9-7851-5075-9949",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spatial Awareness",
+            "id": "ed2f-063e-d559-9369",
+            "hidden": false,
+            "targetId": "d29b-7d9d-ba9d-ef50",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 3,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Hive Collective", "id": "7b43-68cc-f507-407e", "hidden": false, "targetId": "7ff0-73c6-46eb-40e5", "type": "selectionEntry"},
+          {
+            "name": "Acid Spray",
+            "id": "082b-63e9-623d-0035",
+            "hidden": false,
+            "targetId": "584f-7ba5-97a0-bd73",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "547a-ce3f-3831-bc09",
+                "type": "increment",
+                "value": 2,
+                "repeats": [
+                  {
+                    "childId": "model",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Acid Spray", "id": "b068-b345-0530-64ba", "hidden": false, "targetId": "3a31-eb5d-3fad-f8ba", "type": "selectionEntry"}
+        ]
+      }
+    ]
+  }
+}
